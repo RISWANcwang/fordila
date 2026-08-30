@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Untuk Kamu ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💗</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>❤️</span>
+    </div>
+
+    <audio id="musik" loop>
+        <source src="musik/lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card" id="card">
+
+        <div id="halamanAwal">
+
+            <div class="icon">💌</div>
+
+            <h1>Hai Kamu ❤️</h1>
+
+            <p>Ini adalah halaman kecil untukmu.</p>
+
+            <button onclick="bukaSurat()">Buka Surat 💌</button>
+
+        </div>
+
+        <div id="halamanSurat">
+
+            <div class="icon">💖</div>
+
+            <h1>Untuk Kamu</h1>
+
+            <p id="surat"></p>
+
+            <button onclick="lanjut()">Lanjut ➜</button>
+
+        </div>
+
+        <div id="halamanTiga">
+
+            <div class="icon">🌸</div>
+
+            <h1>Satu Hal Lagi...</h1>
+
+            <p>
+                Terima kasih sudah membuka surat ini.
+                Semoga hari kamu selalu dipenuhi hal-hal baik. ❤️
+            </p>
+
+            <button onclick="selesai()">Selesai ❤️</button>
+
+        </div>
+
+        <div id="halamanAkhir">
+
+            <div class="icon">❤️</div>
+
+            <h1>Terima Kasih ❤️</h1>
+
+            <img src="gambar/foto.png" class="foto">
+
+            <p>
+                Semoga hari kamu selalu menyenangkan.
+                Jangan lupa untuk selalu tersenyum 😊
+            </p>
+
+            <p class="akhir">
+                Sampai jumpa lagi 💕
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
