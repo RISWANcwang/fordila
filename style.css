@@ -188,7 +188,7 @@ button:hover {
 
 .foto {
     width: 100%;
-    max-width: 300px;
+    max-width: 150px;
     border-radius: 15px;
     margin: 15px 0;
 
@@ -295,7 +295,7 @@ button:hover {
     }
 
     .foto {
-        max-width: 100%;
+        max-width: 40%;
     }
 
 }
