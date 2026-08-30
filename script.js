@@ -49,6 +49,86 @@ function ketikSurat() {
     ketik();
 }
 
+function ketikPesanTiga() {
+
+    const teks =
+        "Terima kasih sudah membuka surat ini. Semoga hari kamu selalu dipenuhi hal-hal baik (DILA). ❤️";
+
+    const pesan = document.getElementById("pesanTiga");
+
+    pesan.innerHTML = "";
+
+    let i = 0;
+
+    function ketik() {
+
+        if (i < teks.length) {
+
+            pesan.innerHTML += teks.charAt(i);
+
+            i++;
+
+            setTimeout(ketik, 60);
+        }
+    }
+
+    ketik();
+}
+
+function ketikPesanAkhir() {
+
+    const teks =
+        "Semoga hari kamu selalu menyenangkan. Jangan lupa untuk selalu tersenyum 😊 dan terakhir semoga lututnya cepat sembuh yaa 😘";
+
+    const pesan = document.getElementById("pesanAkhir");
+
+    pesan.innerHTML = "";
+
+    let i = 0;
+
+    function ketik() {
+
+        if (i < teks.length) {
+
+            pesan.innerHTML += teks.charAt(i);
+
+            i++;
+
+            setTimeout(ketik, 60);
+
+        }
+
+    }
+
+    ketik();
+}
+
+function ketikPenutup() {
+
+    const teks = "Sampai jumpa lagi 💕";
+
+    const penutup = document.getElementById("penutup");
+
+    penutup.innerHTML = "";
+
+    let i = 0;
+
+    function ketik() {
+
+        if (i < teks.length) {
+
+            penutup.innerHTML += teks.charAt(i);
+
+            i++;
+
+            setTimeout(ketik, 80);
+
+        }
+
+    }
+
+    ketik();
+}
 
 function lanjut() {
 
@@ -64,6 +144,8 @@ function lanjut() {
         halamanTiga.style.display = "block";
 
         halamanTiga.classList.add("fade-in");
+
+        ketikPesanTiga();
 
     }, 500);
 }
@@ -83,6 +165,12 @@ function selesai() {
         halamanAkhir.style.display = "block";
 
         halamanAkhir.classList.add("fade-in");
+
+        ketikPesanAkhir();
+
+        setTimeout(() => {
+            ketikPenutup();
+        }, 5500);
 
         setInterval(buatHati, 300);
 
